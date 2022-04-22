@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  width: 825px;
+  width: 900px;
   margin: 0 auto;
 }
 
@@ -38,7 +38,9 @@ body {
 }
 
 article {
-  padding: 40px 20px;
+  padding-top: 20px;
+  flex: 1;
+  margin-bottom: 0;
 }
 
 p {
@@ -50,7 +52,10 @@ aside {
   background-color: #f7f7f7;
   border-bottom: 4px solid black;
   border-top: 4px solid gray;
-  width: 500px;
+  /* width: 500px; */
+  margin-top: 20px;
+  flex: 0 0 300px;
+  margin-bottom: 0;
 }
 
 nav a:link {
@@ -80,39 +85,45 @@ p::first-line {
 
 /* HEADER */
 .main-header {
+  background-color: #ddd;
   padding: 20px 30px;
   /* margin-bottom: 5px; */
   width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-  font-size: 26px;
+  font-size: 19px;
   text-transform: uppercase;
   font-style: italic;
   text-align: center;
   font-weight: bold;
-  background-color: rgba(14, 12, 12, 0.3);
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .logo-motto {
   text-align: center;
-  margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .head-link:link,
 .head-link:visited {
   color: blue;
+  display: inline-block;
   text-decoration: none;
 }
 
 .head-link:hover,
 .head-link:active {
-  font-weight: bold;
-  font-style: italic;
-  text-decoration: underline #777;
-  font-size: 20px;
+  color: hsla(275, 79%, 80%, 0.937);
 }
+
+/* .head-link:link {
+  margin-bottom: 20px;
+  font-size: 15px;
+} */
 
 .motto {
   font-style: italic;
@@ -126,7 +137,7 @@ p::first-line {
 .product {
   text-transform: uppercase;
   font-size: 20px;
-  background-color: rgba(119, 119, 119, 0.266);
+  background-color: #ddd;
   margin-bottom: 20px;
   width: 500px;
   text-align: center;
@@ -209,10 +220,10 @@ p::first-line {
   text-align: center;
   font-weight: bold;
   font-size: 30px;
-  background-color: #777;
-  border-top: 4px solid black;
-  margin-top: 20px;
-  width: 500px;
+  background-color: #ddd;
+  border-top: 4px solid #777;
+  /* margin-top: 20px; */
+  /* width: 500px; */
 
   position: relative;
 }
@@ -233,8 +244,23 @@ p::first-line {
 .related {
   list-style: none;
   font-size: 15px;
+  padding: 0 10px;
+  margin-left: -16%;
 }
 
 #copyright {
   font-size: 16px;
+}
+
+.related-link {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 60px;
+  gap: 40px;
+  align-items: flex-start;
 }
